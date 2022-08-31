@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
             'post_url',
             'title',
             'created_at',
-            //[sequelize.ltieral('(SELECT COUNT(*) FROM comment WHERE comment.id = vote.post_id)'), 'vote_count']')]
+            //[sequelize.literal('(SELECT COUNT(*) FROM comment WHERE comment.id = vote.post_id)'), 'vote_count']')]
         ],
         order: [['created_at', 'DESC']],
         include: [
